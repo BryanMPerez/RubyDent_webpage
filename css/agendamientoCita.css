@@ -1,0 +1,25 @@
+
+body {
+  width: 1000px;
+  height: 940px;
+  background-image: linear-gradient(#38b6ff49, #38b6ff5c), 
+  url(../assets/fondo-para-agendamientoDecitaL.png);
+  background-size:cover;
+}
+
+.agendamiento-citaL {
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(255, 255, 255, 0.786);
+}
+
+.Imagen-menu-desplegable {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.Imagen-home {
+  width: 25px;
+  margin-right: 8px;
+}
+
+

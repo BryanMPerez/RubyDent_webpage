@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/RubyDentIcon.png" type="image/x-icon">
+  <title>Agendar Cita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/agendamientoCita.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a title="Home" href="principal.html"><img src="assets/imagen_Home.png" class="Imagen-home" alt="Icono home"></a>
+      <img src="assets/menu-deplegable-opciones.png" class="Imagen-menu-desplegable" alt="Imagen menu desplegable">
+    </nav>
+  </header>
+  <main>
+    <section class="agendamiento-citaL">
+      <form name="form" action="agendamiento.php" method="post"> 
+        <h2>AGENDAMIENTO CITA</h2>
+        <h4>Llenar la siguiente informacion para su agendamiento</h4>
+        <p>Nombres</p>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
+        <p>Apellidos</p>
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+        <p>Numero de teléfono</p>
+        <input class="controls" type="text" name="numeroDeTelefono" id="numeroDeTelefono" placeholder="Numero de teléfono">
+        <p>Correo</p>
+        <input class="controls" type="text" name="correo" id="correo" placeholder="Correo">
+        <p>Seleccionar fecha</p>
+        <input class="controls" type="date" name="SeleccionarFecha" step="1" min="2022-06-5" max="2022-07-31" required>
+        <p>Hora</p>
+          <select class="bottons" name="hora" id="hora">
+            <option value="6:00 a.m">6:00 a.m</option>
+            <option value="7:00 a.m">7:00 a.m</option>
+            <option value="8:00 a.m">8:00 a.m</option>
+            <option value="9:00 a.m">9:00 a.m</option>
+            <option value="10:00 a.m">10:00 a.m</option>
+          </select>
+        <p>Genero</p>
+          <select class="bottons" name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>  
+        <p>Servicio</p>
+          <select class="bottons" name="servicio" id="servicio">
+            <option value="selecionar">Seleccionar</option>
+            <option value="dentadurasYparciales">Dentaduras y Parciales</option>
+            <option value="removiblesFlexibles">Removibles Flexibles</option>
+            <option value="reparaciones">Reparaciones</option>
+            <option value="placasDeBruxismo">Placas de Bruxismo</option>
+          </select>
+        <input class="bottons" type="submit" name="boton-realizar-cita" value="REALIZAR CITA">
+    </section>
+  </main>
+  <footer>
+    <p>© 2022. Agendamiento de citas. All Rights Reserved│Design by RubyDent</p>
+  </footer>   
+</body>
+</html>
+
+
